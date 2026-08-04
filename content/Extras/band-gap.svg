@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" font-family="sans-serif" font-size="13">
+  <rect x="1" y="1" width="518" height="268" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="90" y="30" text-anchor="middle" fill="#1f2328">Conductor</text>
+  <rect x="30" y="150" width="120" height="70" fill="#bcd9ff" stroke="#3b6fb0"/>
+  <rect x="30" y="108" width="120" height="42" fill="#cfe8ff" stroke="#3b6fb0"/>
+  <text x="90" y="238" text-anchor="middle" font-size="11" fill="#555">no gap</text>
+  <text x="260" y="30" text-anchor="middle" fill="#1f2328">Semiconductor</text>
+  <rect x="200" y="170" width="120" height="50" fill="#bcd9ff" stroke="#3b6fb0"/>
+  <rect x="200" y="108" width="120" height="35" fill="#cfe8ff" stroke="#3b6fb0"/>
+  <text x="260" y="160" text-anchor="middle" font-size="10" fill="#8a6d00">small gap</text>
+  <text x="260" y="238" text-anchor="middle" font-size="11" fill="#555">crossable</text>
+  <text x="430" y="30" text-anchor="middle" fill="#1f2328">Insulator</text>
+  <rect x="370" y="185" width="120" height="35" fill="#bcd9ff" stroke="#3b6fb0"/>
+  <rect x="370" y="95" width="120" height="30" fill="#cfe8ff" stroke="#3b6fb0"/>
+  <text x="430" y="158" text-anchor="middle" font-size="10" fill="#8a2f00">large gap</text>
+  <text x="430" y="238" text-anchor="middle" font-size="11" fill="#555">too wide</text>
+  <text x="260" y="258" text-anchor="middle" font-size="10" fill="#777">lower bar = valence band · upper bar = conduction band</text>
+</svg>

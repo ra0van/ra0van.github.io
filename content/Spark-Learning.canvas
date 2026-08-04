@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"phase0_root","type":"text","text":"### Phase 0: The High-Level Primer\n**Distributed Engine Topology**\n* Master-Worker Architecture\n* RDD Lineage vs MapReduce Replication\n* The JVM Wall & Need for Tungsten\n* Scale: Handling Petabyte Joins & Skew","x":0,"y":500,"width":300,"height":370},
+		{"id":"mod1_exec","type":"text","text":"#### 1. Execution & Memory","x":450,"y":100,"width":250,"height":80,"color":"1"},
+		{"id":"m1_sub1","type":"text","text":"**Off-Heap Memory**\nCustom arena allocators & fixed-buffer pools (C++/Zig patterns)","x":850,"y":0,"width":280,"height":90},
+		{"id":"m1_sub2","type":"text","text":"**Vectorized Processing**\nSIMD instructions & batching","x":850,"y":120,"width":280,"height":80},
+		{"id":"m1_sub3","type":"text","text":"**CPU Cache Alignment**\nHardware sympathy & L1/L2 layout","x":850,"y":220,"width":280,"height":80},
+		{"id":"mod2_comp","type":"text","text":"#### 2. Compiler & ASTs","x":450,"y":400,"width":250,"height":80,"color":"2"},
+		{"id":"m2_sub1","type":"text","text":"**Relational Algebra**\nProjections, Selections, Joins","x":850,"y":320,"width":280,"height":80},
+		{"id":"m2_sub2","type":"text","text":"**Catalyst Optimizer**\nAnalysis, Logical (Pushdown/Pruning), Physical (Cost Models)","x":850,"y":420,"width":280,"height":90},
+		{"id":"m2_sub3","type":"text","text":"**Whole-Stage Code Gen**\nCollapsing operations to eliminate virtual calls","x":850,"y":530,"width":280,"height":80},
+		{"id":"mod3_stor","type":"text","text":"#### 3. Storage Formats","x":450,"y":700,"width":250,"height":80,"color":"3"},
+		{"id":"m3_sub1","type":"text","text":"**Columnar vs Row**\nOLAP (Parquet) vs OLTP structures","x":850,"y":630,"width":280,"height":80},
+		{"id":"m3_sub2","type":"text","text":"**Compression & Encoding**\nDictionary, RLE, Bit-packing","x":850,"y":730,"width":280,"height":80},
+		{"id":"m3_sub3","type":"text","text":"**Apache Arrow Spec**\nStandardized zero-copy memory layout","x":850,"y":830,"width":280,"height":80},
+		{"id":"mod4_net","type":"text","text":"#### 4. Network & Coordination","x":450,"y":1000,"width":250,"height":80,"color":"4"},
+		{"id":"m4_sub1","type":"text","text":"**The DAG Scheduler**\nTranslating plans to stage boundaries","x":850,"y":930,"width":280,"height":80},
+		{"id":"m4_sub2","type":"text","text":"**Shuffle Mechanics**\nMap sorting, spilling, and reduce fetching","x":850,"y":1030,"width":280,"height":80},
+		{"id":"m4_sub3","type":"text","text":"**Backpressure & State**\nConcurrency control and deadlocks","x":850,"y":1130,"width":280,"height":80}
+	],
+	"edges":[
+		{"id":"edge_r_m1","fromNode":"phase0_root","fromSide":"right","toNode":"mod1_exec","toSide":"left"},
+		{"id":"edge_r_m2","fromNode":"phase0_root","fromSide":"right","toNode":"mod2_comp","toSide":"left"},
+		{"id":"edge_r_m3","fromNode":"phase0_root","fromSide":"right","toNode":"mod3_stor","toSide":"left"},
+		{"id":"edge_r_m4","fromNode":"phase0_root","fromSide":"right","toNode":"mod4_net","toSide":"left"},
+		{"id":"edge_m1_s1","fromNode":"mod1_exec","fromSide":"right","toNode":"m1_sub1","toSide":"left"},
+		{"id":"edge_m1_s2","fromNode":"mod1_exec","fromSide":"right","toNode":"m1_sub2","toSide":"left"},
+		{"id":"edge_m1_s3","fromNode":"mod1_exec","fromSide":"right","toNode":"m1_sub3","toSide":"left"},
+		{"id":"edge_m2_s1","fromNode":"mod2_comp","fromSide":"right","toNode":"m2_sub1","toSide":"left"},
+		{"id":"edge_m2_s2","fromNode":"mod2_comp","fromSide":"right","toNode":"m2_sub2","toSide":"left"},
+		{"id":"edge_m2_s3","fromNode":"mod2_comp","fromSide":"right","toNode":"m2_sub3","toSide":"left"},
+		{"id":"edge_m3_s1","fromNode":"mod3_stor","fromSide":"right","toNode":"m3_sub1","toSide":"left"},
+		{"id":"edge_m3_s2","fromNode":"mod3_stor","fromSide":"right","toNode":"m3_sub2","toSide":"left"},
+		{"id":"edge_m3_s3","fromNode":"mod3_stor","fromSide":"right","toNode":"m3_sub3","toSide":"left"},
+		{"id":"edge_m4_s1","fromNode":"mod4_net","fromSide":"right","toNode":"m4_sub1","toSide":"left"},
+		{"id":"edge_m4_s2","fromNode":"mod4_net","fromSide":"right","toNode":"m4_sub2","toSide":"left"},
+		{"id":"edge_m4_s3","fromNode":"mod4_net","fromSide":"right","toNode":"m4_sub3","toSide":"left"}
+	]
+}

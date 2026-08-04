@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 280" font-family="sans-serif" font-size="14">
+  <rect x="1" y="1" width="478" height="278" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <rect x="40" y="120" width="400" height="120" fill="#ffd9c0" stroke="#b06a3b"/>
+  <text x="240" y="220" text-anchor="middle" fill="#7a3f18">p-type substrate (body)</text>
+  <rect x="60" y="120" width="90" height="55" fill="#bcd9ff" stroke="#3b6fb0"/>
+  <text x="105" y="152" text-anchor="middle" fill="#1f4e8c">n+</text>
+  <rect x="330" y="120" width="90" height="55" fill="#bcd9ff" stroke="#3b6fb0"/>
+  <text x="375" y="152" text-anchor="middle" fill="#1f4e8c">n+</text>
+  <line x1="150" y1="122" x2="330" y2="122" stroke="#1a7a4a" stroke-width="3" stroke-dasharray="6 4"/>
+  <text x="240" y="142" text-anchor="middle" fill="#1a7a4a" font-size="12">channel (forms when gate = high)</text>
+  <rect x="150" y="104" width="180" height="16" fill="#fff2b0" stroke="#b08a00"/>
+  <text x="240" y="99" text-anchor="middle" fill="#7a6100" font-size="12">oxide (insulator)</text>
+  <rect x="150" y="82" width="180" height="20" fill="#c9c9c9" stroke="#555"/>
+  <text x="105" y="66" text-anchor="middle" fill="#1f2328">Source</text>
+  <line x1="105" y1="72" x2="105" y2="120" stroke="#1f2328"/>
+  <text x="240" y="70" text-anchor="middle" fill="#1f2328">Gate</text>
+  <line x1="240" y1="74" x2="240" y2="82" stroke="#1f2328"/>
+  <text x="375" y="66" text-anchor="middle" fill="#1f2328">Drain</text>
+  <line x1="375" y1="72" x2="375" y2="120" stroke="#1f2328"/>
+</svg>

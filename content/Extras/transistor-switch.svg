@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" font-family="sans-serif" font-size="13">
+  <rect x="1" y="1" width="458" height="198" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="115" y="34" text-anchor="middle" fill="#1f2328">Gate = 1 &#8594; ON (closed)</text>
+  <line x1="40" y1="95" x2="90" y2="95" stroke="#1f2328" stroke-width="2"/>
+  <line x1="90" y1="95" x2="150" y2="95" stroke="#2a9d5a" stroke-width="3"/>
+  <line x1="150" y1="95" x2="200" y2="95" stroke="#1f2328" stroke-width="2"/>
+  <circle cx="90" cy="95" r="4" fill="#1f2328"/>
+  <circle cx="150" cy="95" r="4" fill="#1f2328"/>
+  <text x="115" y="128" text-anchor="middle" fill="#1a7a4a">current flows &#8594;</text>
+  <text x="345" y="34" text-anchor="middle" fill="#1f2328">Gate = 0 &#8594; OFF (open)</text>
+  <line x1="270" y1="95" x2="320" y2="95" stroke="#1f2328" stroke-width="2"/>
+  <line x1="320" y1="95" x2="352" y2="72" stroke="#b04040" stroke-width="3"/>
+  <line x1="380" y1="95" x2="430" y2="95" stroke="#1f2328" stroke-width="2"/>
+  <circle cx="320" cy="95" r="4" fill="#1f2328"/>
+  <circle cx="380" cy="95" r="4" fill="#1f2328"/>
+  <text x="345" y="128" text-anchor="middle" fill="#8c1f1f">no current</text>
+</svg>

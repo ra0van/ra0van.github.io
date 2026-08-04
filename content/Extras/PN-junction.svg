@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" font-family="sans-serif" font-size="14">
+  <rect x="1" y="1" width="478" height="218" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <rect x="40" y="60" width="160" height="100" fill="#ffd0d0" stroke="#b04040"/>
+  <text x="120" y="50" text-anchor="middle" fill="#8c1f1f">P-type</text>
+  <text x="120" y="116" text-anchor="middle" fill="#8c1f1f" font-size="18">+  +  +</text>
+  <text x="120" y="140" text-anchor="middle" fill="#8c1f1f" font-size="11">holes</text>
+  <rect x="200" y="60" width="80" height="100" fill="#eeeeee" stroke="#999"/>
+  <rect x="280" y="60" width="160" height="100" fill="#d0e0ff" stroke="#3b6fb0"/>
+  <text x="360" y="50" text-anchor="middle" fill="#1f4e8c">N-type</text>
+  <text x="360" y="116" text-anchor="middle" fill="#1f4e8c" font-size="18">&#8211;  &#8211;  &#8211;</text>
+  <text x="360" y="140" text-anchor="middle" fill="#1f4e8c" font-size="11">electrons</text>
+  <text x="240" y="185" text-anchor="middle" fill="#555" font-size="12">depletion region (built-in barrier)</text>
+</svg>

@@ -67,8 +67,6 @@ Rust throws warning for unassigned or unused variables. To remove such warnings 
 - **Explicit definition** - `let variable name:datatype = value`
 - **Floating Point** number can be of two types *single-precision **f-32***  and *double-precision **f64*** 
 
-![[RustDataTypes|500x300]]
-
 Integers can be fixed size & variable size as well. Fixed size Integers can be signed & unsigned & of different sizes 8-64
 
 ```

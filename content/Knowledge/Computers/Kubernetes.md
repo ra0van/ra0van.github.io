@@ -23,7 +23,7 @@ Kubernetes are a good way to bundle and run you applications. In a production en
 
 That's how kubernetes comes to the rescue! Kubernetes provides you a framework to run distributed systems resiliently. It takes care of scaling and fail-over for your application, provides deployment patterns, and more. 
 
-For example, kubernetes can easily manage a  [[DeploymentStrategies | canary deployment]] for your system. 
+For example, kubernetes can easily manage a canary deployment for your system. 
 
 Kubernetes provides you with : 
 - **Service discovery & load balancing** Kubernetes can expose a container using the DNS name or using their own IP address. If traffic to a container is high, Kubernetes is able to load balance and distribute the network traffic so that the deployment is stable.

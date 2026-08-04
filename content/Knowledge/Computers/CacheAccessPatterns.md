@@ -7,7 +7,7 @@ public: true
 
 #review #computer_science #flashcards/computer_science #brewed
 In-memory caches such as **Memcached** and **Redis** are  key-value stores between your application and your data storage. Since data is stored on RAM, it is much faster than typical database where data is stored on disk. 
-RAM is more limited than a disk, so cache invalidation algorithms such as least recently used ([[LRU]]) can help invalidate cold entries and keep 'hot' data in RAM. 
+RAM is more limited than a disk, so cache invalidation algorithms such as least recently used (LRU) can help invalidate cold entries and keep 'hot' data in RAM. 
 
 Redis has following additional features : 
 - Persistence option

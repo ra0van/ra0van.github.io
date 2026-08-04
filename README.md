@@ -1,17 +1,37 @@
-# Quartz v5
+# ra0van.github.io
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Personal blog and digital garden, built with [Quartz](https://quartz.jzhao.xyz/).
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Live at **https://ra0van.github.io**.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## How content gets here
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+The actual notes live in a private vault (a separate, private repo). Nothing in that
+vault is edited directly in this repo — instead, [`scripts/sync-public-content.mjs`](scripts/sync-public-content.mjs)
+copies from the vault into [`content/`](content), and only what that script copies
+ever gets committed here.
 
-## Sponsors
+```sh
+node scripts/sync-public-content.mjs   # pulls from ../network/Notes by default
+                                        # override with VAULT_DIR=/path/to/vault
+```
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+It excludes the vault's `Personal/` and `.obsidian/` folders by name, and skips any
+note frontmatter-tagged `private: true` wherever it lives. Everything else in the
+vault is currently synced as-is (not gated behind a `public: true` flag) — see
+`scripts/sync-public-content.mjs` for the exact rules if that changes.
+
+Run the sync, review the diff, then commit and push — pushing to `main` triggers the
+GitHub Pages deploy via [`.github/workflows/deploy.yaml`](.github/workflows/deploy.yaml).
+
+## Local development
+
+```sh
+npm install
+npx quartz build --serve
+```
+
+## Credit
+
+Built on [Quartz v5](https://github.com/jackyzha0/quartz) by Jacky Zhao — `upstream`
+remote still points there for pulling in Quartz updates.
