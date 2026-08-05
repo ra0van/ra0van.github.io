@@ -16,32 +16,33 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Fraunces
-      body: Public Sans
+      header: Newsreader
+      body: Newsreader
       code: JetBrains Mono
     colors:
-      # "Warm / Teal Ink" — aged-paper ground, warm ink text, cool teal accent
-      # (see design comparison: https://claude.ai/code/artifact/91c308d2-505f-43eb-bb4a-09064d46486a)
+      # Sepia aesthetic from arnav.tech - warm aged-paper with excellent contrast
+      # Light mode: warm cream background with dark sepia text
+      # Dark mode: inverted with high contrast
       lightMode:
-        light: "#f2ead8"
-        lightgray: "#ded0ab"
-        gray: "#7d6f57"
-        darkgray: "#4f4531"
-        dark: "#33291c"
-        secondary: "#3c6e71"
-        tertiary: "#a8763e"
-        highlight: rgba(60, 110, 113, 0.15)
-        textHighlight: "#f0c05a80"
+        light: "#f4ecd8"
+        lightgray: "#e8dcc8"
+        gray: "#a8956d"
+        darkgray: "#5a4a38"
+        dark: "#2b1f15"
+        secondary: "#5a4a38"
+        tertiary: "#8b6f47"
+        highlight: rgba(90, 74, 56, 0.12)
+        textHighlight: "#d4a574"
       darkMode:
-        light: "#221c14"
-        lightgray: "#443a29"
-        gray: "#a89878"
-        darkgray: "#d8cdb8"
-        dark: "#ece3d2"
-        secondary: "#6faaad"
-        tertiary: "#d1a256"
-        highlight: rgba(111, 170, 173, 0.18)
-        textHighlight: "#d1a25688"
+        light: "#2b1f15"
+        lightgray: "#3d2e22"
+        gray: "#a8956d"
+        darkgray: "#d4c4b0"
+        dark: "#f4ecd8"
+        secondary: "#d4a574"
+        tertiary: "#e8c89e"
+        highlight: rgba(212, 165, 116, 0.15)
+        textHighlight: "#8b6f47"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
