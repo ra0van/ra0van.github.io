@@ -1,0 +1,33 @@
+{
+  "name": "ra0van's digital garden",
+  "short_name": "ra0van",
+  "description": "Public notes and essays on computer science, software engineering, and learning",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f2ead8",
+  "theme_color": "#3c6e71",
+  "icons": [
+    {
+      "src": "/static/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "screenshots": [
+    {
+      "src": "/static/og-image.png",
+      "type": "image/png",
+      "sizes": "1200x628"
+    }
+  ]
+}

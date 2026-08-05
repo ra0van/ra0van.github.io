@@ -93,6 +93,20 @@ export default (() => {
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
+        {/* PWA & iOS App Support */}
+        <link rel="manifest" href={joinSegments(baseDir, "static/manifest.webmanifest")} />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#3c6e71" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-180x180.png")} sizes="180x180" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-152x152.png")} sizes="152x152" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-144x144.png")} sizes="144x144" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-120x120.png")} sizes="120x120" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-114x114.png")} sizes="114x114" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-76x76.png")} sizes="76x76" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-72x72.png")} sizes="72x72" />
+        <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-60x60.png")} sizes="60x60" />
+
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
