@@ -20,27 +20,26 @@ configuration:
       body: Newsreader
       code: JetBrains Mono
     colors:
-      # Sepia aesthetic from arnav.tech - warm aged-paper with excellent contrast
-      # Light mode: warm cream background with dark sepia text
-      # Dark mode: inverted with high contrast
+      # Sepia aesthetic from arnav.tech - DARK MODE optimized with excellent contrast
+      # Using dark background as primary for readability
       lightMode:
-        light: "#f4ecd8"
-        lightgray: "#e8dcc8"
-        gray: "#a8956d"
-        darkgray: "#5a4a38"
-        dark: "#2b1f15"
-        secondary: "#5a4a38"
-        tertiary: "#8b6f47"
-        highlight: rgba(90, 74, 56, 0.12)
-        textHighlight: "#d4a574"
-      darkMode:
-        light: "#2b1f15"
-        lightgray: "#3d2e22"
-        gray: "#a8956d"
-        darkgray: "#d4c4b0"
-        dark: "#f4ecd8"
+        light: "#1a1410"
+        lightgray: "#2b2420"
+        gray: "#5a4a38"
+        darkgray: "#a8956d"
+        dark: "#e8dcc8"
         secondary: "#d4a574"
-        tertiary: "#e8c89e"
+        tertiary: "#f4ecd8"
+        highlight: rgba(212, 165, 116, 0.15)
+        textHighlight: "#8b6f47"
+      darkMode:
+        light: "#1a1410"
+        lightgray: "#2b2420"
+        gray: "#5a4a38"
+        darkgray: "#a8956d"
+        dark: "#e8dcc8"
+        secondary: "#d4a574"
+        tertiary: "#f4ecd8"
         highlight: rgba(212, 165, 116, 0.15)
         textHighlight: "#8b6f47"
 plugins:

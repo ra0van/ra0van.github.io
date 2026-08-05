@@ -97,7 +97,7 @@ export default (() => {
         <link rel="manifest" href={joinSegments(baseDir, "static/manifest.webmanifest")} />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="theme-color" content="#f4ecd8" />
+        <meta name="theme-color" content="#1a1410" />
         <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-180x180.png")} sizes="180x180" />
         <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-152x152.png")} sizes="152x152" />
         <link rel="apple-touch-icon" href={joinSegments(baseDir, "static/apple-icon-144x144.png")} sizes="144x144" />
